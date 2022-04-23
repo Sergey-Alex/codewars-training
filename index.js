@@ -43,9 +43,24 @@
 // }
 //
 // console.log(positiveSum([1,-4,7,12]))
-function abbrevName(name){
-    return  name.split(' ').map(item => item[0].toUpperCase()).join('.')
+// function abbrevName(name){
+//     return  name.split(' ').map(item => item[0].toUpperCase()).join('.')
+//
+//
+// }
+// console.log(abbrevName('Sam Harris'))
 
+// function boolToWord( bool ){
+//  return  bool === true ? "Yes" : 'No'
+// }
+//
+// console.log(boolToWord(false))
+
+function sumTwoSmallestNumbers(numbers) {
+   let newArr = numbers.sort((a,b) => a - b)
+    let res = newArr[0] + newArr[1]
+    return res
 
 }
-console.log(abbrevName('Sam Harris'))
+
+console.log(sumTwoSmallestNumbers([15, 28, 4, 2, 43]))
