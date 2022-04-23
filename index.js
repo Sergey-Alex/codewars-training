@@ -38,8 +38,14 @@
 //
 // console.log(opposite(0))
 
-function positiveSum(arr) {
-    return arr.filter(item => item > 0).reduce((i, n) => i+n,0)
-}
+// function positiveSum(arr) {
+//     return arr.filter(item => item > 0).reduce((i, n) => i+n,0)
+// }
+//
+// console.log(positiveSum([1,-4,7,12]))
+function abbrevName(name){
+    return  name.split(' ').map(item => item[0].toUpperCase()).join('.')
 
-console.log(positiveSum([1,-4,7,12]))
+
+}
+console.log(abbrevName('Sam Harris'))
