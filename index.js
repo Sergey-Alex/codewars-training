@@ -56,11 +56,50 @@
 //
 // console.log(boolToWord(false))
 
-function sumTwoSmallestNumbers(numbers) {
-   let newArr = numbers.sort((a,b) => a - b)
-    let res = newArr[0] + newArr[1]
-    return res
+// function sumTwoSmallestNumbers(numbers) {
+//    let newArr = numbers.sort((a,b) => a - b)
+//     let res = newArr[0] + newArr[1]
+//     return res
 
+// }
+//
+// console.log(sumTwoSmallestNumbers([15, 28, 4, 2, 43]))
+// function removeChar(str) {
+//     return str.slice(1, -1)
+// }
+// console.log(removeChar('abibas'))
+// function findShort(s) {
+//     let str = s.split(' ')
+//     let res = Infinity
+//     for (let i = 0; i < str.length; i++) {
+//         res = Math.min(str[i].length, res)
+//     }
+//     return res
+//
+// }
+//
+// console.log(findShort("bitcoin take over the world maybe who knows perhaps"))
+// function highAndLow(numbers) {
+//     let nim = numbers.split(' ').sort()
+//     let arr = []
+//     nim.forEach(item => {
+//         arr.push(Number(item))
+//     })
+//
+//     let sortArr = arr.sort((a, b) => a - b)
+//
+//     let first = sortArr[0]
+//     let last = sortArr[sortArr.length - 1]
+//
+//
+//     return last} ${first}"`
+//
+// }
+// // console.log(highAndLow('1 9 3 4 -5'))
+// console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"))
+
+function reverseWords(str) {
+    return str.split('').reverse().join('')
 }
 
-console.log(sumTwoSmallestNumbers([15, 28, 4, 2, 43]))
+console.log(reverseWords('double  spaced  words'))
